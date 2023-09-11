@@ -3,7 +3,8 @@ const { Router } = require("express");
 
 const router = Router();
 
-let pageName = ""
+//pass the page name in each route
+let pageName = "";
 
 router.get("/", (req, res) => {
   pageName = "home";

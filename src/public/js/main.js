@@ -1,5 +1,5 @@
 //starting the aos animations
 AOS.init({
   easing: "ease-out-back",
-  duration: 1300,
+  duration: 1100,
 });
