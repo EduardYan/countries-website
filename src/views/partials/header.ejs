@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries | EduardYan</title>
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="public/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="public/css/bootstrap-styles.css" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="public/css/main.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="node/aos/dist/aos.css" />
+    
+    <% if (variable && variable.length > 0) { %>
+      <% if (variable === "view") { %>
+        <link rel="stylesheet" href="public/css/view-fix.css">
+      <% } else { %>
+      <% } %>
+    <% } else { %>
+    <% } %>
+
+  </head>
+  <body>
+    <%- include("./nav.ejs") -%>
+
+    <div class="container-fluid" id="principalContainer">

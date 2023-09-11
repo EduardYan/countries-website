@@ -1,0 +1,4 @@
+/* setting padding 0 in the container for the carousel */
+#principalContainer {
+  padding: 0;
+}
