@@ -10,21 +10,25 @@
       href="public/img/favicon.ico"
       type="image/x-icon"
     />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="public/css/bootstrap-styles.css" />
+    <link rel="stylesheet" href="public/css/bootswatch.min.css">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="public/css/main.css" />
     <!-- AOS -->
     <link rel="stylesheet" href="node/aos/dist/aos.css" />
-    
-    <% if (variable && variable.length > 0) { %>
-      <% if (variable === "view") { %>
-        <link rel="stylesheet" href="public/css/view-fix.css">
-      <% } else { %>
-      <% } %>
-    <% } else { %>
-    <% } %>
 
+    <% if (variable && variable.length > 0) { %> <% if (variable === "view") {
+    %>
+    <link rel="stylesheet" href="public/css/view-fix.css" />
+    <% } else { %> <% } %> <% } else { %> <% } %>
   </head>
   <body>
     <%- include("./nav.ejs") -%>

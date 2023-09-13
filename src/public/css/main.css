@@ -1,6 +1,12 @@
 body {
-  background-image: url("../img/background.jpg");
-  background-size: cover;
+  /* background-image: url("../img/background.jpg");
+  background-size: contain;  */
+
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2rem;
+  background: #be93c5;
+  background: -webkit-linear-gradient(to right, #7bc6cc, #be93c5);
+  background: linear-gradient(to right, #7bc6cc, #be93c5);
 }
 
 #principal {
