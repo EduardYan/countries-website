@@ -1,0 +1,79 @@
+<%- include("./partials/header.ejs") -%>
+
+<div class="row my-4">
+  <div class="col-md-7 text-center">
+    <h1 data-aos="fade-up" class="display-3">Mexico</h1>
+  </div>
+  <div class="col-md-3 text-center my-4">
+    <div class="btn-group">
+      <button
+        type="button"
+        class="btn btn-danger dropdown-toggle"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Sections
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#principal">Principal</a></li>
+        <li><a class="dropdown-item" href="#history">History</a></li>
+        <li><a class="dropdown-item" href="#">Culture</a></li>
+        <li><a class="dropdown-item" href="#">Currency</a></li>
+        <li><a class="dropdown-item" href="#">Tourist</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Images</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row mx-auto justify-content-center">
+  <div class="col-md-8">
+    <section id="principal">
+      <h1 class="display-5 text-start">Principal</h1>
+      <p class="text-justify">
+        Mexico is known for its rich and diverse culture, which is a fusion of
+        indigenous Mesoamerican traditions and Spanish influence. Mexican
+        culture is reflected in its art, music, gastronomy and traditional
+        festivities such as the Day of the Dead and Independence celebrations.
+      </p>
+    </section>
+    <section id="history">
+      <h1 class="display-5 text-start">History</h1>
+      <p class="text-justify">
+        The history of Mexico dates back to the pre-Columbian civilizations that
+        flourished in the region, such as the Olmecs, Mayans and Aztecs. These
+        cultures developed advanced agricultural systems, monumental
+        architecture and writing systems. In 1519, the Spanish conquistador
+        Hernán Cortés arrived on the coasts of Mexico and began the conquest of
+        the Aztec empire. After years of conflict, the Spanish managed to subdue
+        the Aztecs and established New Spain as a colony of the Spanish Empire.
+        During the colonial period, the Spanish imposed their culture, religion
+        and system of government on the territory. Discontent with Spanish rule
+        grew throughout the 18th and 19th centuries. In 1810, priest Miguel
+        Hidalgo y Costilla began the fight for Mexican independence, known as
+        the War of Independence. After more than a decade of conflict, Mexico
+        finally achieved its independence in 1821. The post-independence period
+        was marked by political instability and internal conflicts. Mexico
+        experienced a series of government changes, armed conflicts, and loss of
+        territory, such as the war with the United States in the 1840s and the
+        French intervention in the 1860s. In 1910, the Mexican Revolution broke
+        out, a social and political conflict that lasted almost a decade and
+        sought to transform the social, economic and political structures of the
+        country. The Mexican Revolution had a significant impact on the history
+        and identity of Mexico. In the 20th century, Mexico experienced major
+        political and social changes, including the creation of the
+        Institutional Revolutionary Party (PRI) which governed for much of the
+        century. In recent decades, Mexico has experienced a transition towards
+        a more pluralistic democratic system. Today, Mexico is a multicultural
+        and diverse nation, with a developing economy and a rich cultural
+        heritage that is reflected in its art, music and gastronomy.
+      </p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <img src="public/img/image1.jpg" alt="image 1" id="image1" />
+  </div>
+</div>
+
+<%- include("./partials/footer.ejs") -%>

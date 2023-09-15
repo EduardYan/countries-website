@@ -9,7 +9,11 @@ body {
   background: linear-gradient(to right, #7bc6cc, #be93c5);
 }
 
-#principal {
+.text-justify {
+  text-align: justify;
+}
+
+#principal-section {
   margin: 10% 0;
 }
 

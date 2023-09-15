@@ -16,6 +16,11 @@ router.get("/view", (req, res) => {
   return res.render("view", { variable: pageName });
 });
 
+router.get("/view-mexico", (req, res) => {
+  pageName = "mexico";
+  return res.render("mexico", { variable: pageName });
+});
+
 router.get("/search", (req, res) => {
   console.log(req.query.search);
   return res.send("Search");
