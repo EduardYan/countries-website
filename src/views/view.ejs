@@ -1,292 +1,148 @@
 <%- include("./partials/header.ejs") -%>
 
-<section id="carousel" class="carousel slide" data-aos="fade-in">
-  <div class="carousel-indicators">
-    <button
-      type="button"
-      data-bs-target="#carousel"
-      data-bs-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carousel"
-      data-bs-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carousel"
-      data-bs-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carousel"
-      data-bs-slide-to="3"
-      aria-label="Slide 4"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carousel"
-      data-bs-slide-to="4"
-      aria-label="Slide 5"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carousel"
-      data-bs-slide-to="5"
-      aria-label="Slide 6"
-    ></button>
-  </div>
+<h1 data-aos="fade-up" class="display-4 text-center my-5">Countries</h1>
 
-  <div class="carousel-inner">
-    <div class="carousel-item active">
+<section class="row justify-content-around mx-auto">
+  <div class="col-lg-4" data-aos="fade-in">
+    <article class="card hvr-glow">
       <img
+        class="card-img-top"
         src="public/img/mexico-flag.jpg"
-        class="d-block w-100"
-        alt="mexico flag"
+        alt="Card image cap"
         loading="lazy"
       />
-    </div>
-    <div class="carousel-item">
-      <img
-        src="public/img/canada-flag.jpg"
-        class="d-block w-100"
-        alt="canada flag"
-        loading="lazy"
-      />
-    </div>
-    <div class="carousel-item">
-      <img
-        src="public/img/united-states-flag.jpg"
-        class="d-block w-100"
-        alt="unite states flag"
-        loading="lazy"
-      />
-    </div>
-    <div class="carousel-item">
-      <img
-        src="public/img/el-salvador-flag.jpg"
-        class="d-block w-100"
-        alt="el salvador flag"
-        loading="lazy"
-      />
-    </div>
-    <div class="carousel-item">
-      <img
-        src="public/img/french-flag.jpg"
-        class="d-block w-100"
-        alt="french flag"
-        loading="lazy"
-      />
-    </div>
-    <div class="carousel-item">
-      <img
-        src="public/img/japan-flag.jpg"
-        class="d-block w-100"
-        alt="japan flag"
-        loading="lazy"
-        height="550"
-      />
-    </div>
+      <div class="card-body">
+        <h1 class="card-title display-6">Mexico 🌎</h1>
+        <p class="card-text">
+          <strong>Welcome to Mexico</strong>, land of traditions, colors and
+          vibrant flavors! 🌮🌵 Located in the southern part of North America,
+          Mexico is a country rich in history, culture and natural beauty.
+        </p>
+      </div>
+      <div class="card-footer">
+        <a class="btn btn-primary d-block w-100" href="/view-mexico">Enter</a>
+      </div>
+    </article>
   </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#carousel"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#carousel"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <div class="col-lg-4" data-aos="fade-in">
+    <article class="card hvr-glow">
+      <img
+        class="card-img-top"
+        src="public/img/canada-flag.jpg"
+        alt="Card image cap"
+        loading="lazy"
+      />
+      <div class="card-body">
+        <h1 class="card-title display-6">Canada 🍁</h1>
+        <p class="card-text">
+          <strong>Come and get to know Canada</strong>, the land of diversity
+          and natural beauty! Immerse yourself in a country of vast expanses,
+          from the majestic mountains to the immense coasts. Discover its rich
+          culture, where indigenous, French and British influences intertwine,
+          along with a vibrant mix of immigrant cultures from around the world
+          🏒
+        </p>
+      </div>
+      <div class="card-footer">
+        <a class="btn btn-primary d-block w-100" href="/view-canada">Enter</a>
+      </div>
+    </article>
+  </div>
+  <div class="col-lg-4" data-aos="fade-in">
+    <article class="card hvr-glow">
+      <img
+        class="card-img-top"
+        src="public/img/united-states-flag.jpg"
+        alt="Card image cap"
+        loading="lazy"
+      />
+      <div class="card-body">
+        <h1 class="card-title display-6">United States 🗽</h1>
+        <p class="card-text">
+          <strong>Welcome to United States</strong>, the land of opportunity and
+          diversity! This country stretches from the east coast of the Atlantic
+          Ocean to the west coast of the Pacific Ocean, encompassing a wide
+          variety of landscapes and cultures.
+        </p>
+      </div>
+      <div class="card-footer">
+        <a class="btn btn-primary d-block w-100" href="/view-united-states"
+          >Enter</a
+        >
+      </div>
+    </article>
+  </div>
 </section>
 
-<h1 data-aos="fade-up" class="display-3 text-center mt-5 mb-4">Countries</h1>
-
-<section data-aos="flip-right" class="accordion mb-5" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button
-        class="accordion-button"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseOne"
-        aria-expanded="true"
-        aria-controls="collapseOne"
-      >
-        Mexico 🌎
-      </button>
-    </h2>
-    <div
-      id="collapseOne"
-      class="accordion-collapse collapse"
-      aria-labelledby="headingOne"
-      data-bs-parent="#accordionExample"
-    >
-      <div class="accordion-body">
-        <strong>Welcome to Mexico</strong>, land of traditions, colors and
-        vibrant flavors! 🌮🌵 Located in the southern part of North America,
-        Mexico is a country rich in history, culture and natural beauty.
-        <a class="btn btn-primary btn-sm ms-1" href="/view-mexico">Enter</a>
+<section class="row justify-content-around mx-auto">
+  <div class="col-lg-4" data-aos="fade-in">
+    <article class="card hvr-glow">
+      <img
+        class="card-img-top"
+        src="public/img/el-salvador-flag.jpg"
+        alt="Card image cap"
+        loading="lazy"
+      />
+      <div class="card-body">
+        <h1 class="card-title display-6">
+          El Salvador
+          <img
+            src="public/img/el-salvador.png"
+            alt=" el salvador"
+            id="elSalvadorLogo"
+          />
+        </h1>
+        <p class="card-text">
+          <strong>Welcome to El Salvador</strong>, a small country full of charm
+          and diversity in the heart of Central America!
+        </p>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseTwo"
-        aria-expanded="false"
-        aria-controls="collapseTwo"
-      >
-        Canada 🍁
-      </button>
-    </h2>
-    <div
-      id="collapseTwo"
-      class="accordion-collapse collapse"
-      aria-labelledby="headingTwo"
-      data-bs-parent="#accordionExample"
-    >
-      <div class="accordion-body">
-        <strong>Come and get to know Canada</strong>, the land of diversity and
-        natural beauty! Immerse yourself in a country of vast expanses, from the
-        majestic mountains to the immense coasts. Discover its rich culture,
-        where indigenous, French and British influences intertwine, along with a
-        vibrant mix of immigrant cultures from around the world 🏒
-        <a class="btn btn-primary btn-sm ms-2" href="/view-canada">Enter</a>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseThree"
-        aria-expanded="false"
-        aria-controls="collapseThree"
-      >
-        United States 🗽
-      </button>
-    </h2>
-    <div
-      id="collapseThree"
-      class="accordion-collapse collapse"
-      aria-labelledby="headingThree"
-      data-bs-parent="#accordionExample"
-    >
-      <div class="accordion-body">
-        <strong>Welcome to United States</strong>, the land of opportunity and
-        diversity! This country stretches from the east coast of the Atlantic
-        Ocean to the west coast of the Pacific Ocean, encompassing a wide
-        variety of landscapes and cultures.
-
-        <a class="btn btn-primary btn-sm ms-2" href="/view-united-states"
+      <div class="card-footer">
+        <a class="btn btn-primary d-block w-100" href="/view-el-salvador"
           >Enter</a
         >
       </div>
-    </div>
+    </article>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingFour">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseFour"
-        aria-expanded="false"
-        aria-controls="collapseFour"
-      >
-        El Salvador
-        <img
-          src="public/img/el-salvador.png"
-          alt=" el salvador"
-          id="elSalvadorLogo"
-        />
-      </button>
-    </h2>
-    <div
-      id="collapseFour"
-      class="accordion-collapse collapse"
-      aria-labelledby="headingFour"
-      data-bs-parent="#accordionExample"
-    >
-      <div class="accordion-body">
-        <strong>Welcome to El Salvador</strong>, a small country full of charm
-        and diversity in the heart of Central America!
-        <a class="btn btn-primary btn-sm ms-2" href="/view-el-salvador"
-          >Enter</a
-        >
+  <div class="col-lg-4" data-aos="fade-in">
+    <article class="card hvr-glow">
+      <img
+        class="card-img-top"
+        src="public/img/french-flag2.jpg"
+        alt="Card image cap"
+        loading="lazy"
+      />
+      <div class="card-body">
+        <h1 class="card-title display-6">French 🥖</h1>
+        <p class="card-text">
+          <strong>¡Bienvenu en France!</strong> Discover the elegance and charm
+          of France, the country of art, culture and gastronomy 🍷!
+        </p>
       </div>
-    </div>
+      <div class="card-footer">
+        <a class="btn btn-primary d-block w-100" href="/view-french">Enter</a>
+      </div>
+    </article>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingFive">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseFive"
-        aria-expanded="false"
-        aria-controls="collapseFive"
-      >
-        French 🥖
-      </button>
-    </h2>
-    <div
-      id="collapseFive"
-      class="accordion-collapse collapse"
-      aria-labelledby="headingFive"
-      data-bs-parent="#accordionExample"
-    >
-      <div class="accordion-body">
-        <strong>¡Bienvenu en France!</strong> Discover the elegance and charm of
-        France, the country of art, culture and gastronomy 🍷!
-        <a class="btn btn-primary btn-sm ms-2" href="/view-french">Enter</a>
+  <div class="col-lg-4" data-aos="fade-in">
+    <article class="card hvr-glow">
+      <img
+        class="card-img-top"
+        src="public/img/japan-flag.jpg"
+        alt="Card image cap"
+        loading="lazy"
+      />
+      <div class="card-body">
+        <h1 class="card-title display-6">Japan ⛩️</h1>
+        <p class="card-text">
+          <strong>Welcome to Japan</strong>, a fascinating country that combines
+          tradition and modernity in a unique way! 👘
+        </p>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingSix">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseSix"
-        aria-expanded="false"
-        aria-controls="collapseSix"
-      >
-        Japan ⛩️
-      </button>
-    </h2>
-    <div
-      id="collapseSix"
-      class="accordion-collapse collapse"
-      aria-labelledby="headingSix"
-      data-bs-parent="#accordionExample"
-    >
-      <div class="accordion-body">
-        <strong>Welcome to Japan</strong>, a fascinating country that combines
-        tradition and modernity in a unique way! 👘
-        <a class="btn btn-primary btn-sm ms-2" href="/view-japan">Enter</a>
+      <div class="card-footer">
+        <a class="btn btn-primary d-block w-100" href="/view-japan">Enter</a>
       </div>
-    </div>
+    </article>
   </div>
 </section>
 

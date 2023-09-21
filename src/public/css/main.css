@@ -1,62 +1,49 @@
-body {
-  /* background-image: url("../img/background.jpg");
-  background-size: contain;  */
+:root {
+  --font: "Barlow", sans-serif;
+}
 
-  font-family: "Barlow", sans-serif;
+body {
+  font-family: var(--font);
   font-size: 1.2rem;
-  background: #be93c5;
-  background: -webkit-linear-gradient(to right, #7bc6cc, #be93c5);
-  background: linear-gradient(to right, #7bc6cc, #be93c5);
+  background-color: #f2edeb;
 }
 
 .text-justify {
   text-align: justify;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 #principal-section {
   margin: 10% 0;
-}
-
-.accordion {
-  margin: 0 5rem 5rem 5rem;
-}
-
-#carousel .carousel-inner .carousel-item img {
-  height: 550px;
 }
 
 #elSalvadorLogo {
   width: 25px;
   height: auto;
-  margin-left: 0.5rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.col-lg-4 article {
+  height: 100%;
+  border-style: none;
+}
+
+.row {
+  margin-bottom: 3rem;
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 600px) {
-  #carousel .carousel-inner .carousel-item img {
-    height: 300px;
-  }
-
-  .accordion {
-    margin: 0 1rem 5rem 1rem;
-  }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  #carousel .carousel-inner .carousel-item img {
-    height: 350px;
-  }
-
-  .accordion {
-    margin: 0 2rem 5rem 2rem;
-  }
 }
 
 @media (min-width: 700px) and (max-width: 1024px) {
-  #carousel .carousel-inner .carousel-item img {
-    height: 400px;
-  }
-
-  .accordion {
-    margin: 0 3rem 5rem 3rem;
-  }
 }

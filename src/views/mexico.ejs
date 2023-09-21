@@ -1,11 +1,9 @@
 <%- include("./partials/header.ejs") -%>
 
-<div class="row my-4">
-  <div class="col-md-7 text-center">
-    <h1 data-aos="fade-up" class="display-3">Mexico</h1>
-  </div>
-  <div class="col-md-3 text-center my-4">
-    <div class="btn-group">
+<div class="row mx-auto justify-content-center">
+  <div class="col-md-8 my-3">
+    <h1 data-aos="fade-up" class="display-3" id="country-name">Mexico</h1>
+    <div class="btn-group" data-aos="flip-up">
       <button
         type="button"
         class="btn btn-danger dropdown-toggle"
@@ -18,7 +16,7 @@
         <li><a class="dropdown-item" href="#principal">Principal</a></li>
         <li><a class="dropdown-item" href="#history">History</a></li>
         <li><a class="dropdown-item" href="#">Culture</a></li>
-        <li><a class="dropdown-item" href="#">Currency</a></li>
+        <li><a class="dropdown-item" href="#">Data</a></li>
         <li><a class="dropdown-item" href="#">Tourist</a></li>
         <li><hr class="dropdown-divider" /></li>
         <li><a class="dropdown-item" href="#">Images</a></li>
@@ -29,21 +27,24 @@
 
 <div class="row mx-auto justify-content-center">
   <div class="col-md-8">
-    <section id="principal">
-      <h1 class="display-5 text-start">Principal</h1>
-      <p class="text-justify">
+    <section id="principal" data-aos="fade">
+      <h1 class="display-5">Principal</h1>
+      <p class="text-justify info-text">
         Mexico is known for its rich and diverse culture, which is a fusion of
         indigenous Mesoamerican traditions and Spanish influence. Mexican
         culture is reflected in its art, music, gastronomy and traditional
         festivities such as the Day of the Dead and Independence celebrations.
       </p>
     </section>
-    <section id="history">
-      <h1 class="display-5 text-start">History</h1>
-      <p class="text-justify">
-        The history of Mexico dates back to the pre-Columbian civilizations that
-        flourished in the region, such as the Olmecs, Mayans and Aztecs. These
-        cultures developed advanced agricultural systems, monumental
+    <section id="history" data-aos="fade">
+      <h1 class="display-5">History</h1>
+      <p class="text-justify info-text">
+        <strong class="text-strong"
+          >The history of Mexico dates back to the pre-Columbian civilizations
+          that flourished in the region, such as the Olmecs, Mayans and
+          Aztecs.</strong
+        >
+        These cultures developed advanced agricultural systems, monumental
         architecture and writing systems. In 1519, the Spanish conquistador
         Hernán Cortés arrived on the coasts of Mexico and began the conquest of
         the Aztec empire. After years of conflict, the Spanish managed to subdue
@@ -71,9 +72,9 @@
       </p>
     </section>
   </div>
-  <div class="col-md-4">
+  <!-- <div class="col-md-4">
     <img src="public/img/image1.jpg" alt="image 1" id="image1" />
-  </div>
+  </div> -->
 </div>
 
 <%- include("./partials/footer.ejs") -%>
