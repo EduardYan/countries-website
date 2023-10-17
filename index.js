@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const morgan = require("morgan");
 const { START_CONFIG } = require("./src/settings/start");
-require("ejs")
+require("ejs");
 
 const app = express();
 
@@ -25,3 +25,4 @@ app.use(routes);
 
 //running
 app.listen(app.get("port"), "0.0.0.0");
+console.log(`Server in port ${app.get("port")}`);
